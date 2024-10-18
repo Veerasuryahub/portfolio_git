@@ -1,48 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welcome to veerasurya portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="logo.jpg" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">protfolio</a></li>
-                <li><a href="#">contact</a></li>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">protfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
 
-            </ul>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
 
-        </nav>
+            </nav>
+
+        </div>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Veerasurya</span> <br> From India</h1>
+        </div>
     </div>
-    <div class="header-text">
-        <p>Software Developer</p>
-        <h1>Hi, I'm <span>VeeraSurya</span> <br> From India</h1>
-    </div>
-</div>
 
-<!-- --------about------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-1">
-                <img src="about.jpg">
-            </div>
-            <div class="col-2">
-                <h1 class="title" >About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nesciunt omnis ipsa qui quo est rem optio exercitationem quia, voluptatibus delectus magnam voluptatum? Pariatur quasi aperiam quidem modi nisi optio?</p>
+    <!-- --------about------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="about.jpg">
+                </div>
+                <div class="col-2">
+                    <h1 class="title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, error id! Magnam adipisci
+                        doloremque quo officiis consequatur quisquam, sint ut. Iure, deserunt aliquam repudiandae
+                        recusandae error sunt quis fuga sit quod consequatur delectus numquam voluptates blanditiis
+                        veritatis. Aut provident laboriosam deserunt explicabo a quisquam dicta quibusdam tempora
+                        reprehenderit quas ducimus consequuntur maiores, animi assumenda praesentium fugiat sit!
+                    </p>
+
+
+
+                    <div class="tabs">
+                        <p class="tab-links skill-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contant skill-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>desining the web page and app</li>
+                            <li><span>Python</span><br>python programming language</li>
+                            <li><span>WED DESIGN</span><br>using html,css,javascript to develop website</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contant" id="Experiance">
+                        <ul>
+                            <li><span>2023-MARCH</span><br>intership at CODSOFT for web development</li>
+                            <li><span>2024-JAN</span><br>TECHNOHACK to wed</li>
+                            <li><span>2024-OCT</span><br>Mechin learning using python intersipe at TVS - Chennai</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contant" id="Education">
+                        <ul>
+                            <li><span>2018-2020</span><br>10th and 12th at s.s.hr.s.school in konapet</li>
+                            <li><span>2020-2022</span><br>Diploma -computer scinnce in alagappa polytechnic college</li>
+                            <li><span>2022-2025</span><br>B.E cse in government collage of engineering</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-    
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, non placeat consectetur laudantium
+                        qui doloremque reprehenderit a quaerat atque ex?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-face-smile"></i>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, non placeat consectetur laudantium
+                        qui doloremque reprehenderit a quaerat atque ex?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python" style="color: black;"></i>
+                    <h2>PYTHON</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, non placeat consectetur laudantium
+                        qui doloremque reprehenderit a quaerat atque ex?</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list" style="color:white">
+                <div class="work">
+                    <img src="cals.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Thw web site calculate perfectly given input number</p>
+                        <a href="https://github.com/Veerasuryahub/calculator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="cus-seg.png">
+                    <div class="layer">
+                        <h3>Customer Segmentation</h3>
+                        <p>Thw web site calculate perfectly given input number</p>
+                        <a href="https://github.com/Veerasuryahub/customer_segmentation"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="timer.png">
+                    <div class="layer">
+                        <h3>Timer</h3>
+                        <p>Thw web site calculate perfectly given input number</p>
+                        <a href="https://github.com/Veerasuryahub/timer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="register.jpeg">
+                    <div class="layer">
+                        <h3>Register</h3>
+                        <p>Thw web site calculate perfectly given input number</p>
+                        <a href="https://github.com/Veerasuryahub/register"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>veerasurya39@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9025176541</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/link2veera/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Veerasuryahub"><i class="fab fa-github"></i></a>
+
+                    </div>
+                    <a href="RESUME-VEERASURYA.pdf" Download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Nmae" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright @ Veera. Made With <i class="fas fa-heart"></i> BY Own Mind</p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontants = document.getElementsByClassName("tab-contant")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("skill-link")
+            }
+            for (tabcontant of tabcontants) {
+                tabcontant.classList.remove("skill-tab")
+            }
+            event.currentTarget.classList.add("skill-link")
+            document.getElementById(tabname).classList.add("skill-tab")
+        }
+
+    </script>
+
+    <script>
+        var sidemenus = document.getElementById("sidemenu")
+        function openmenu() {
+            sidemenus.style.right = "0";
+        }
+        function closemenu() {
+            sidemenus.style.right = "-200px";
+        }
+    </script>
+
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzSETaqyVe0U5IMumApkcVVpkAYfWLGfXq3j5pQSADLycpDaoooqmB7eyoQESXpEjLF/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML="Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
+
 </html>
