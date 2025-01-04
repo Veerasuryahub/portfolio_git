@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
 
     nav {
         display: flex;
@@ -85,11 +85,13 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .col-1 {
-    flex-basis: 35%;
-    margin: 30px;
+    flex-basis: 30%;
+    margin: 5px;
+    position: relative;
 }
 
 .col-1 img {
@@ -100,15 +102,18 @@ nav ul li a:hover {
 
 .col-1 img {
     max-height: 500px;
-    /* Adjust this as needed */
+    
     object-fit: cover;
 }
 
 .col-2 {
-    margin-top: 50px;
+    margin-top: 20px;
     flex-basis: 60%;
     color: black;
     font-size: 22px;
+    position: relative;
+    /* position: absolute; */
+    /* left: 500px; */
 }
 
 .col-2 .title {
@@ -434,6 +439,8 @@ nav .fas {
     }
     .col-2{
         font-size: 12px;
+        left: -10px;
+        /* top: 500px; */
     }
     .tabs{
         flex-basis: 100%;
